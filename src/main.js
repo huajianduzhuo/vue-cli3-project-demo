@@ -6,6 +6,7 @@ import store from './store'
 import TipFormItem from './plugins/TipFormItem'
 import './registerServiceWorker'
 import 'element-ui/lib/theme-chalk/index.css'
+import './assets/css/index.scss'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
