@@ -1,14 +1,17 @@
-const path = require('path')
-const SkeletonPlugin = require('page-skeleton-webpack-plugin').SkeletonPlugin
+// const path = require('path')
+// const SkeletonPlugin = require('page-skeleton-webpack-plugin').SkeletonPlugin
 
 module.exports = {
+  /**
+   * page-skeleton-webpack-plugin
+   * 不好用，放弃
+   */
   configureWebpack: {
-    plugins: [
+    /* plugins: [
       new SkeletonPlugin({
         pathname: path.resolve(__dirname, `./shell`),
         staticDir: path.resolve(__dirname, './dist'),
-        routes: ['/', '/inputtip', 'list'],
-        port: '7890',
+        routes: ['/', '/inputtip', '/list'],
         loading: 'chiaroscuro',
         svg: {
           color: '#EFEFEF',
@@ -37,17 +40,8 @@ module.exports = {
         cssUnit: 'rem',
         headless: true,
         // minify: false,
-        cookies: [{
-          name: 'SID',
-          value: 'a495vvmEPEE4DZi083dr8yR3EAPYqW40HaWA',
-          url: 'https://h5.ele.me'
-        }, {
-          name: 'USERID',
-          value: '273745271',
-          url: 'https://h5.ele.me'
-        }],
         noInfo: false
       })
-    ]
+    ] */
   }
 }
